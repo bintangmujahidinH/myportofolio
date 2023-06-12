@@ -1,0 +1,282 @@
+/* Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* navbar */
+.navbar .collapse {
+    position: relative;
+}
+
+.navbar .navbar-brand {
+    text-transform: capitalize;
+    font-size: 26px;
+    font-family: "viga";
+}
+
+.navbar .nav-link {
+    margin-right: 30px;
+    text-transform: capitalize;
+}
+
+.navbar .btn {
+    border-radius: 40px;
+    text-transform: uppercase;
+}
+
+/* .navbar .nav-link {
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+} */
+
+
+/* jumbotron */
+.jumbotron {
+    width: 100%;
+    height: 540px;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,1)), url(../img/jumbotron-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.jumbotron .display-4 {
+    padding-top: 200px;
+    color: white;
+    font-size: 32px;
+}
+
+.jumbotron .display-4 span {
+    font-weight: 500;
+}
+
+
+/* info panel */
+.info-panel {
+    margin-top: -85px;
+    border-radius: 12px;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.7);
+}
+
+.info-panel img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.info-panel h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.info-panel p {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.info-panel .float-left {
+    float: left;
+}
+
+
+/* PROFILE */
+.profile {
+    margin-top: 20px;
+}
+
+hr {
+    width: 250px;
+    border-top: 2px solid #666;
+    margin: auto;
+}
+
+.profile .card-img img {
+    width: 180px;
+}
+
+.profile .profile-card {
+    border-radius: 10px;
+}
+
+.profile .text-bio {
+    text-align: justify;
+}
+
+
+/* UTILITY */
+.jumbotron .tombol {
+    border-radius: 20px;
+}
+
+
+/* working-space */
+.working-space {
+    margin-top: 130px;
+}
+
+.working-space h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+.working-space span {
+    font-weight: 500;
+}
+
+.working-space p {
+    font-weight: 200;
+    font-size: 12px;
+}
+
+.working-space .btn {
+    font-size: 12px;
+    border-radius: 14px;
+}
+
+
+/* testimonial */
+.testimonial {
+    margin-top: 120px;
+}
+
+.testimonial .text {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 200;
+    word-spacing: 2px;
+}
+
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+}
+
+.testimonial h5 {
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.testimonial .text-tengah {
+    margin-top: -8px;
+}
+
+.testimonial .figure-caption {
+    font-size: 13px;
+    margin-top: -12px;
+}
+
+.testimonial p {
+    font-weight: 200;
+    font-size: 12px;
+}
+
+.testimonial .img-smalle {
+    width: 80px;
+    height: 80px;
+    filter: grayscale(1);
+}
+
+.testimonial .slogan-motivation {
+    margin-top: -85px;
+}
+
+
+/* work */
+.work .turun {
+    margin-bottom: -100px;
+}
+
+
+
+
+
+/* KHUSUS DEKSTOP VERSION */
+@media (min-width: 992px) { 
+    .navbar .navbar-brand {
+        text-transform: capitalize;
+        font-size: 32px;
+        font-family: "viga";
+    }
+
+    .navbar .nav-link {
+        text-transform: uppercase;
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        width: 50%;
+        margin: auto;
+        border-bottom: 3px solid #0b63dc;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .navbar .navbar-brand,
+    .navbar .nav-link {
+        color: white !important;
+    }
+
+
+    /* jumbotron */
+    .jumbotron {
+        height: 640px;
+        margin-top: -75px;
+    }
+
+    .jumbotron .display-4 {
+        font-size: 62px;
+    }
+
+
+    /* working-space */
+    .working-space h2 {
+        font-size: 40px;
+        text-transform: uppercase;
+    }
+
+    .working-space p {
+        font-size: 16px;
+    }
+
+    .working-space .btn {
+        border-radius: 20px;
+        font-size: 16px;
+    }
+
+
+    /* testimonial */
+    .testimonial .text {
+        font-size: 30px;
+        text-align: center;
+        font-weight: 200;
+        word-spacing: 2px;
+    }
+
+ }
+
+
+ /* KHUSUS MOBILE VERSION */
+ @media (max-width: 600px) {
+    /* profile */
+    .profile .profile-card {
+        width: 380px;
+        margin-bottom: 10px;
+    }
+
+    .profile .biodata {
+        width: 405px;
+        margin-left: 25px;
+    }
+
+    .working-space h2 {
+        margin-top: -15px;
+        font-size: 15px;
+    }
+ }
